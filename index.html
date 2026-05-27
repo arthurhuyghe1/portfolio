@@ -267,132 +267,824 @@
         <p>Projets académiques (SAE) et personnels illustrant les compétences du Programme National (PN).</p>
       </div>
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <ul class="nav nav-tabs mb-4" id="portfolioTabs" role="tablist">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="administrer-tab" data-bs-toggle="tab"
+              data-bs-target="#administrer-tab-pane" type="button" role="tab" aria-controls="administrer-tab-pane"
+              aria-selected="true">
+              <h2>Administrer</h2>
+            </button>
+          </li>
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tous</li>
-            <li data-filter=".filter-admin">Administrer</li>
-            <li data-filter=".filter-connect">Connecter</li>
-            <li data-filter=".filter-prog">Programmer</li>
-            <li data-filter=".filter-perso">Projets personnels</li>
-          </ul>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="connecter-tab" data-bs-toggle="tab" data-bs-target="#connecter-tab-pane"
+              type="button" role="tab" aria-controls="connecter-tab-pane" aria-selected="false">
+              <h2>Connecter</h2>
+            </button>
+          </li>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="programmer-tab" data-bs-toggle="tab" data-bs-target="#programmer-tab-pane"
+              type="button" role="tab" aria-controls="programmer-tab-pane" aria-selected="false">
+              <h2>Programmer</h2>
+            </button>
+          </li>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-perso">
-              <div class="portfolio-content h-100">
-                <a href="https://vlansky.ovh" target="_blank" title="Accéder au site du serveur">
-                  <img src="assets/img/portfolio/netcup.jpg" class="img-fluid" alt="Serveur Netcup"
-                    onerror="this.src='https://placehold.co/600x400?text=VPS+Linux'">
-                </a>
-                <div class="portfolio-info">
-                  <h4>Serveur Root & crafty</h4>
-                  <p>Installation serveur root, Docker, Crafty. Sécurisation Firewall & Nginx.</p>
-                  <div>
-                    <span class="badge-skill">Administrer</span>
-                    <span class="badge-skill">Sécuriser</span>
+        </ul>
+        <div class="tab-content" id="portfolioTabsContent">
+
+          <div class="tab-pane fade show active" id="administrer-tab-pane" role="tabpanel"
+            aria-labelledby="administrer-tab" tabindex="0">
+            <div class="accordion" id="accordion_administrer">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_administrer_0">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_administrer_0" aria-expanded="false"
+                    aria-controls="collapse_accordion_administrer_0">
+                    <i class="bi bi-hdd-network me-2 text-primary"></i> AC11.01: Maîtriser les lois fondamentales de
+                    l'électricité
+                  </button>
+                </h3>
+                <div id="collapse_accordion_administrer_0" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_administrer_0" data-bs-parent="#accordion_administrer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai réalisé des mesures de tensions et de courants sur
+                          des circuits RLC en laboratoire.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Il fallait comprendre le comportement électrique des
+                          composants de base qui constituent le matériel réseau.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai utilisé une
+                          platine d'expérimentation, un oscilloscope et un multimètre numérique.</p>
+                        <p><strong>Mes difficultés :</strong> J'ai eu du mal à régler la base de temps et les calibres
+                          de l'oscilloscope pour obtenir une lecture claire.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai visualisé concrètement la notion de déphasage
+                          et vérifié expérimentalement la loi d'Ohm.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je vérifierais systématiquement mes calculs
+                          théoriques sur papier avant de commencer le câblage.</p>
+                        <p><strong>Preuves (PJ) :</strong> Compte-rendu du TP d'électricité avec mes relevés.</p>
+                        <p><strong>Notes :</strong> Vulgariser ce point lors de l'oral pour le rendre accessible.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1101.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/electronic%20circuit%20board%20with%20multimeter?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC11.01: Maîtriser les lois fondamentales de l'électricité">
+                      </div>
+                    </div>
                   </div>
-                  <a href="https://panel.vlansphere.ovh" title="Voir le site" target="_blank" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-connect">
-              <div class="portfolio-content h-100">
-                <a href="assets/img/portfolio/sae103.jpg" class="glightbox"
-                  data-title="SAE 1.03 | Caractérisation de supports de transmission"
-                  data-description=".glightbox-desc-sae103">
-                  <img src="assets/img/portfolio/sae103.jpg" class="img-fluid" alt="Supports de transmission"
-                    onerror="this.src='https://placehold.co/600x400?text=Transmission'">
-                </a>
-                <!-- GLightbox Description invisible sur la page, captée automatiquement par le lien a -->
-                <div class="glightbox-desc-sae103" style="display: none;">
-                  <p>L'objectif de ce projet était d'analyser et de quantifier les performances de liaisons physiques
-                    (câbles Ethernet et coaxiaux). À travers une approche mêlant théorie et simulation logicielle, j'ai
-                    appris à évaluer la qualité d'un système de transmission.</p>
-                  <p><strong>Paramètres clés :</strong> Mesure précise de l'atténuation (perte de signal) et du retard
-                    de propagation.</p>
-                  <p><strong>Méthodologie :</strong> Réalisation de simulations basées sur des modèles mathématiques
-                    pour prédire le comportement des supports.</p>
-                  <p><strong>Livrables :</strong> Rédaction de comptes-rendus techniques synthétiques après chaque
-                    session expérimentale.</p>
-                  <p><strong>Compétences :</strong> Rigueur scientifique, analyse de données et maîtrise des outils de
-                    simulation.</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Supports de transmission (SAE 1.03)</h4>
-                  <p>Analyse des performances de liaisons physiques (atténuation, retard).</p>
-                  <div>
-                    <span class="badge-skill">Connecter</span>
-                    <span class="badge-skill">Théorie & Simulation</span>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_administrer_1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_administrer_1" aria-expanded="false"
+                    aria-controls="collapse_accordion_administrer_1">
+                    <i class="bi bi-hdd-network me-2 text-primary"></i> AC11.02: Comprendre l'architecture et les
+                    systèmes numériques
+                  </button>
+                </h3>
+                <div id="collapse_accordion_administrer_1" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_administrer_1" data-bs-parent="#accordion_administrer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai utilisé un convertisseur analogique-numérique
+                          (Maquette CAN/CNA 33200 Pierron) avec la maquette Analog Discovery.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Je voulais observer comment une voix ou un signal
+                          électrique est transformé en données binaires pour être transmis.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai généré des signaux
+                          avec l'Analog Discovery et observé les mots binaires en sortie de la maquette CAN.</p>
+                        <p><strong>Mes difficultés :</strong> Comprendre la notion de fréquence d'échantillonnage de
+                          Shannon a été complexe au début.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai compris l'impact direct du nombre de bits
+                          (résolution) sur la fidélité du signal reconstitué.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je ferais davantage de schémas chronogrammes au
+                          brouillon pour anticiper les résultats de la maquette.</p>
+                        <p><strong>Preuves (PJ) :</strong> Captures d'écran des courbes CAN/CNA sur l'oscilloscope
+                          virtuel.</p>
+                        <p><strong>Notes :</strong> Faire le lien direct avec le débit d'un réseau informatique.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1102.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/binary%20code%20digital%20system?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC11.02: Comprendre l'architecture et les systèmes numériques">
+                      </div>
+                    </div>
                   </div>
-                  <a href="assets/img/portfolio/sae103.jpg" class="glightbox details-link" title="Afficher les détails"
-                    data-title="SAE 1.03 | Caractérisation de supports de transmission"
-                    data-description=".glightbox-desc-sae103"><i class="bi bi-plus"></i></a>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-admin">
-              <div class="portfolio-content h-100">
-                <a href="https://gitlab.univ-artois.fr/arthur_huyghe/sae12" target="_blank" title="Voir sur GitLab">
-                  <img src="assets/img/portfolio/sae102.jpg" class="img-fluid" alt="Architecture Réseau"
-                    onerror="this.src='https://placehold.co/600x400?text=Cisco+Network'">
-                </a>
-                <div class="portfolio-info">
-                  <h4>Architecture Réseau (SAE 1.02)</h4>
-                  <p>LAN complet : VLANs, Routeur Cisco, DHCP/DNS et Serveur Web.</p>
-                  <div>
-                    <span class="badge-skill">Connecter</span>
-                    <span class="badge-skill">Cisco</span>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_administrer_2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_administrer_2" aria-expanded="false"
+                    aria-controls="collapse_accordion_administrer_2">
+                    <i class="bi bi-hdd-network me-2 text-primary"></i> AC11.03: Configurer les fonctions de base du
+                    réseau local
+                  </button>
+                </h3>
+                <div id="collapse_accordion_administrer_2" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_administrer_2" data-bs-parent="#accordion_administrer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai configuré des commutateurs Cisco Catalyst 2960 et
+                          des routeurs de la série 2900 pour relier plusieurs PC.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était de permettre la communication IP
+                          entre différentes machines appartenant à des sous-réseaux distincts.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai d'abord simulé
+                          l'architecture sur Packet Tracer, puis j'ai utilisé des câbles console sur le vrai matériel
+                          Cisco (CLI).</p>
+                        <p><strong>Mes difficultés :</strong> Mémoriser les différentes commandes de l'IOS Cisco et
+                          comprendre les modes d'exécution a été un défi.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai assimilé le rôle de la table MAC pour les
+                          switchs et de la table de routage pour les routeurs.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je préparerais un script texte avec toutes mes
+                          commandes avant de brancher le câble console.</p>
+                        <p><strong>Preuves (PJ) :</strong> Topologie réseau Packet Tracer et fichier de configuration
+                          (.txt).</p>
+                        <p><strong>Notes :</strong> Bien différencier l'adresse physique (MAC) de l'adresse logique
+                          (IP).</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1103.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/cisco%20network%20switch%20router%20cables?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC11.03: Configurer les fonctions de base du réseau local">
+                      </div>
+                    </div>
                   </div>
-                  <a href="https://gitlab.univ-artois.fr/arthur_huyghe/sae12" title="Voir sur Gitlab" target="_blank"
-                    class="details-link"><i class="bi bi-gitlab"></i></a>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-perso">
-              <div class="portfolio-content h-100">
-                <a href="https://github.com/arthurhuyghe1/jarvis.git" target="_blank" title="Voir sur GitHub">
-                  <img src="assets/img/portfolio/jarvis.jpg" class="img-fluid" alt="Code Python"
-                    onerror="this.src='https://placehold.co/600x400?text=Python+Code'">
-                </a>
-                <div class="portfolio-info">
-                  <h4>Projet "Jarvis" & IA Locale</h4>
-                  <p>Assistant LLM local. Scripting Python (Scapy) pour contrôle caméra IP.</p>
-                  <div>
-                    <span class="badge-skill">Programmer</span>
-                    <span class="badge-skill">Python</span>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_administrer_3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_administrer_3" aria-expanded="false"
+                    aria-controls="collapse_accordion_administrer_3">
+                    <i class="bi bi-hdd-network me-2 text-primary"></i> AC11.04: Maîtriser les rôles des systèmes
+                    d'exploitation
+                  </button>
+                </h3>
+                <div id="collapse_accordion_administrer_3" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_administrer_3" data-bs-parent="#accordion_administrer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai installé et paramétré Windows Server et utilisé
+                          Ubuntu en travaux pratiques.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Il était nécessaire de savoir administrer de manière
+                          centralisée un réseau d'entreprise hétérogène.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai utilisé des
+                          machines virtuelles sous VirtualBox pour déployer un annuaire Active Directory sous Windows.
+                        </p>
+                        <p><strong>Mes difficultés :</strong> La configuration du serveur DNS, indispensable au bon
+                          fonctionnement de l'Active Directory, m'a posé problème.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai acquis les bases de la gestion des droits, des
+                          groupes d'utilisateurs et des stratégies de groupe (GPO).</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je documenterais chaque étape de l'installation
+                          pour créer un tutoriel qui me servira plus tard.</p>
+                        <p><strong>Preuves (PJ) :</strong> Captures d'écran de mon interface d'administration Active
+                          Directory.</p>
+                        <p><strong>Notes :</strong> Insister sur la complémentarité entre Linux et Windows.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1104.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/server%20rack%20datacenter%20windows%20server?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC11.04: Maîtriser les rôles des systèmes d'exploitation">
+                      </div>
+                    </div>
                   </div>
-                  <a href="https://github.com/arthurhuyghe1/jarvis.git" title="Voir sur GitHub" target="_blank"
-                    class="details-link"><i class="bi bi-github"></i></a>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-prog">
-              <div class="portfolio-content h-100">
-                <a href="https://gitlab.univ-artois.fr/arthur_huyghe/sae15" target="_blank" title="Voir sur GitLab">
-                  <img src="assets/img/portfolio/sae105.jpg" class="img-fluid" alt="Data Visualization"
-                    onerror="this.src='https://placehold.co/600x400?text=Data+Viz'">
-                </a>
-                <div class="portfolio-info">
-                  <h4>Traitement de Données (SAE 1.05)</h4>
-                  <p>Scripting Python pour traiter CSV (Data.gouv) et graphiques via QuickChart.</p>
-                  <div>
-                    <span class="badge-skill">Surveiller</span>
-                    <span class="badge-skill">Scripting</span>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_administrer_4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_administrer_4" aria-expanded="false"
+                    aria-controls="collapse_accordion_administrer_4">
+                    <i class="bi bi-hdd-network me-2 text-primary"></i> AC11.05: Identifier les dysfonctionnements du
+                    réseau local
+                  </button>
+                </h3>
+                <div id="collapse_accordion_administrer_4" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_administrer_4" data-bs-parent="#accordion_administrer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai effectué des opérations de dépannage lors de la mise
+                          en place du réseau de la SAÉ 12.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Le but était de rétablir la communication entre les
+                          postes clients et le serveur principal de l'entreprise fictive.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai utilisé des
+                          commandes de diagnostic réseau comme "ping", "tracert" et "ipconfig" / "ifconfig".</p>
+                        <p><strong>Mes difficultés :</strong> Il m'a été difficile d'isoler rapidement si le problème
+                          était physique (câble virtuel) ou logique (erreur IP).</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai appris à suivre une méthodologie de diagnostic
+                          rigoureuse, en vérifiant couche OSI par couche OSI.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je testerais la connectivité à chaque nouvelle
+                          étape de configuration, plutôt que de tout tester à la fin.</p>
+                        <p><strong>Preuves (PJ) :</strong> Journal de bord répertoriant les erreurs rencontrées et leurs
+                          solutions.</p>
+                        <p><strong>Notes :</strong> Montrer ma capacité à analyser un problème calmement.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1105.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/network%20troubleshooting%20computer%20screen?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC11.05: Identifier les dysfonctionnements du réseau local">
+                      </div>
+                    </div>
                   </div>
-                  <a href="https://gitlab.univ-artois.fr/arthur_huyghe/sae15" title="Voir sur Gitlab" target="_blank"
-                    class="details-link"><i class="bi bi-gitlab"></i></a>
                 </div>
               </div>
-            </div>
 
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_administrer_5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_administrer_5" aria-expanded="false"
+                    aria-controls="collapse_accordion_administrer_5">
+                    <i class="bi bi-hdd-network me-2 text-primary"></i> AC11.06: Installer un poste client
+                  </button>
+                </h3>
+                <div id="collapse_accordion_administrer_5" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_administrer_5" data-bs-parent="#accordion_administrer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai déployé un poste sous Ubuntu et je l'ai intégré au
+                          réseau de notre SAÉ.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Il fallait fournir un environnement de travail
+                          fonctionnel et connecté à un nouvel utilisateur.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai réalisé une
+                          installation propre depuis une image ISO, puis j'ai configuré l'adressage IP via le terminal.
+                        </p>
+                        <p><strong>Mes difficultés :</strong> Paramétrer correctement l'interface réseau virtuelle dans
+                          VirtualBox pour qu'elle discute avec le serveur a pris du temps.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai compris l'importance de paramétrer correctement
+                          la passerelle par défaut et le serveur DNS sur un client.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> J'utiliserais un serveur DHCP pour automatiser
+                          la distribution des adresses IP au lieu de le faire manuellement.</p>
+                        <p><strong>Preuves (PJ) :</strong> Capture d'écran du terminal validant l'accès au réseau de
+                          l'entreprise.</p>
+                        <p><strong>Notes :</strong> Relier cela aux besoins d'assistance utilisateur (Helpdesk).</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1106.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/linux%20ubuntu%20desktop%20computer?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3" alt="Illustration AC11.06: Installer un poste client">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade " id="connecter-tab-pane" role="tabpanel" aria-labelledby="connecter-tab"
+            tabindex="0">
+            <div class="accordion" id="accordion_connecter">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_connecter_0">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_connecter_0" aria-expanded="false"
+                    aria-controls="collapse_accordion_connecter_0">
+                    <i class="bi bi-plug me-2 text-primary"></i> AC12.01: Mesurer, analyser et commenter les signaux
+                  </button>
+                </h3>
+                <div id="collapse_accordion_connecter_0" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_connecter_0" data-bs-parent="#accordion_connecter">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai procédé à l'analyse spectrale d'un signal carré en
+                          laboratoire de télécommunications.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Je devais observer les différentes fréquences
+                          (harmoniques) qui composent un signal complexe.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai manipulé un
+                          générateur de fonctions couplé à un analyseur de spectre.</p>
+                        <p><strong>Mes difficultés :</strong> Interpréter le domaine fréquentiel affiché à l'écran par
+                          rapport au domaine temporel classique a demandé de la réflexion.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai compris la décomposition de Fourier de manière
+                          très visuelle et pratique.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je prendrais le temps d'exporter les données de
+                          l'appareil sur clé USB pour illustrer plus proprement mon rapport.</p>
+                        <p><strong>Preuves (PJ) :</strong> Graphiques spectraux annotés avec les fréquences
+                          fondamentales.</p>
+                        <p><strong>Notes :</strong> Ce point illustre bien le lien entre mathématiques et électronique.
+                        </p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1201.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/oscilloscope%20signal%20frequency%20spectrum?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC12.01: Mesurer, analyser et commenter les signaux">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_connecter_1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_connecter_1" aria-expanded="false"
+                    aria-controls="collapse_accordion_connecter_1">
+                    <i class="bi bi-plug me-2 text-primary"></i> AC12.02: Caractériser des systèmes de transmissions
+                  </button>
+                </h3>
+                <div id="collapse_accordion_connecter_1" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_connecter_1" data-bs-parent="#accordion_connecter">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai étudié et mesuré les signaux d'une modulation
+                          d'amplitude (AM).</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était de comprendre comment une
+                          information basse fréquence est transportée par une porteuse haute fréquence.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai utilisé des
+                          maquettes spécifiques de modulation et observé les signaux entrants et sortants à
+                          l'oscilloscope.</p>
+                        <p><strong>Mes difficultés :</strong> Régler les paramètres pour éviter la surmodulation (qui
+                          déforme le signal) a demandé beaucoup de minutie.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai perçu comment le bruit ambiant peut facilement
+                          dégrader un signal analogique modulé.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je comparerais visuellement ces résultats avec
+                          une modulation de fréquence (FM) pour mieux comprendre les différences.</p>
+                        <p><strong>Preuves (PJ) :</strong> Relevés de courbes oscilloscopiques du signal modulé.</p>
+                        <p><strong>Notes :</strong> C'est la base théorique essentielle pour aborder le Wi-Fi plus tard.
+                        </p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1202.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/radio%20frequency%20modulation%20waves?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC12.02: Caractériser des systèmes de transmissions">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_connecter_2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_connecter_2" aria-expanded="false"
+                    aria-controls="collapse_accordion_connecter_2">
+                    <i class="bi bi-plug me-2 text-primary"></i> AC12.03: Déployer des supports de transmission
+                  </button>
+                </h3>
+                <div id="collapse_accordion_connecter_2" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_connecter_2" data-bs-parent="#accordion_connecter">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai étudié en détail la structure interne d'un câble à
+                          paires torsadées (RJ45) et les différentes normes existantes.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Il était essentiel de comprendre les
+                          caractéristiques physiques des câbles pour faire les bons choix de supports matériels lors du
+                          déploiement d'un réseau local.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai analysé des
+                          échantillons de câbles ouverts en classe, observé les blindages et étudié les normes de
+                          câblage (EIA/TIA 568) à l'aide des supports de cours.</p>
+                        <p><strong>Mes difficultés :</strong> Mémoriser les différents types de blindages (UTP, FTP,
+                          STP) et leurs impacts réels sur la diaphonie a été difficile au début.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai compris l'importance de la torsion des paires
+                          pour annuler les interférences et j'ai appris à différencier les catégories de câbles en
+                          fonction des débits.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> J'aurais aimé avoir le temps de pratiquer
+                          réellement le sertissage d'une prise RJ45 avec une pince spécifique pour concrétiser cette
+                          étude théorique.</p>
+                        <p><strong>Preuves (PJ) :</strong> Schémas annotés de la coupe d'un câble RJ45 issus de mes
+                          notes de cours.</p>
+                        <p><strong>Notes :</strong> Préciser à l'oral que la pratique du sertissage n'a pas pu être
+                          faite par manque de temps, mais que la théorie est acquise.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1203.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/rj45%20ethernet%20twisted%20pair%20cables?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC12.03: Déployer des supports de transmission">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_connecter_3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_connecter_3" aria-expanded="false"
+                    aria-controls="collapse_accordion_connecter_3">
+                    <i class="bi bi-plug me-2 text-primary"></i> AC12.04: Connecter les systèmes de ToIP
+                  </button>
+                </h3>
+                <div id="collapse_accordion_connecter_3" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_connecter_3" data-bs-parent="#accordion_connecter">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai installé un serveur Asterisk et un serveur TFTP pour
+                          relier un téléphone Fanvil et un Cisco.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> L'enjeu était de faire communiquer entre eux deux
+                          téléphones physiques de marques différentes via le protocole SIP.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai installé un
+                          serveur Debian virtuel, paramétré le service TFTP, et édité les fichiers "sip.conf" et
+                          "extensions.conf".</p>
+                        <p><strong>Mes difficultés :</strong> Comprendre la syntaxe stricte exigée par les fichiers de
+                          configuration Asterisk a demandé beaucoup de concentration.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> Il est essentiel d'analyser les fichiers ligne par
+                          ligne et j'ai appris à déployer les VM simultanément pour gagner du temps.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je sauvegarderais systématiquement les fichiers
+                          de configuration d'origine avant de commencer mes modifications.</p>
+                        <p><strong>Preuves (PJ) :</strong> Extraits commentés de mes fichiers de configuration et vidéo
+                          d'un appel.</p>
+                        <p><strong>Notes :</strong> Faire le lien entre les TP et les concepts de la VoIP vus en cours.
+                        </p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1204.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/voip%20ip%20telephone%20cisco?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC12.04: Connecter les systèmes de ToIP">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_connecter_4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_connecter_4" aria-expanded="false"
+                    aria-controls="collapse_accordion_connecter_4">
+                    <i class="bi bi-plug me-2 text-primary"></i> AC12.05: Communiquer avec un tiers
+                  </button>
+                </h3>
+                <div id="collapse_accordion_connecter_4" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_connecter_4" data-bs-parent="#accordion_connecter">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai réalisé une présentation orale devant la classe lors
+                          de mes cours de communication et d'anglais.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était d'apprendre à structurer mon
+                          discours, à m'exprimer en public et à adapter mon vocabulaire (y compris en anglais).</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai préparé un
+                          diaporama épuré pour appuyer mes propos, et j'ai rédigé des fiches mémos pour ne pas lire mes
+                          notes.</p>
+                        <p><strong>Mes difficultés :</strong> Gérer mon stress face au public et trouver fluidement mes
+                          mots en anglais ont été de véritables défis.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai compris que la communication non verbale
+                          (posture, regard, intonation) est vitale lors d'une intervention.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je m'enregistrerais en vidéo lors de mes
+                          répétitions pour repérer mes tics de langage et améliorer ma posture.</p>
+                        <p><strong>Preuves (PJ) :</strong> Support de présentation (diaporama) et grille d'évaluation de
+                          l'enseignant.</p>
+                        <p><strong>Notes :</strong> Insister sur l'importance de l'anglais technique dans
+                          l'informatique.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1205.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/student%20giving%20presentation%20slides?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3" alt="Illustration AC12.05: Communiquer avec un tiers">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade " id="programmer-tab-pane" role="tabpanel" aria-labelledby="programmer-tab"
+            tabindex="0">
+            <div class="accordion" id="accordion_programmer">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_programmer_0">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_programmer_0" aria-expanded="false"
+                    aria-controls="collapse_accordion_programmer_0">
+                    <i class="bi bi-code-slash me-2 text-primary"></i> AC13.01: Utiliser un système informatique
+                  </button>
+                </h3>
+                <div id="collapse_accordion_programmer_0" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_programmer_0" data-bs-parent="#accordion_programmer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai pris en main l'environnement Linux en ligne de
+                          commande.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Il est indispensable de savoir se déplacer et gérer
+                          des fichiers sans interface graphique sur les serveurs professionnels.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai utilisé le
+                          terminal d'Ubuntu et manipulé les commandes de base (ls, cd, grep, chmod, nano).</p>
+                        <p><strong>Mes difficultés :</strong> Abandonner le confort de la souris et mémoriser les
+                          options de chaque commande a été déroutant au départ.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai découvert la puissance et la rapidité du shell,
+                          notamment pour gérer les permissions des fichiers.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je créerais dès le début des raccourcis (alias)
+                          pour les commandes que j'utilise le plus souvent.</p>
+                        <p><strong>Preuves (PJ) :</strong> Capture de l'historique de mes commandes shell
+                          (.bash_history).</p>
+                        <p><strong>Notes :</strong> Compétence incontournable pour l'administration système.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1301.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/linux%20terminal%20command%20line?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC13.01: Utiliser un système informatique">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_programmer_1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_programmer_1" aria-expanded="false"
+                    aria-controls="collapse_accordion_programmer_1">
+                    <i class="bi bi-code-slash me-2 text-primary"></i> AC13.02: Lire, exécuter, corriger et modifier un
+                    programme
+                  </button>
+                </h3>
+                <div id="collapse_accordion_programmer_1" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_programmer_1" data-bs-parent="#accordion_programmer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai débogué un script Python fourni avec des erreurs
+                          intentionnelles par l'enseignant.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Je devais analyser la logique d'un code écrit par un
+                          tiers pour l'optimiser et le rendre fonctionnel.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai utilisé un IDE
+                          (Visual Studio Code) avec des points d'arrêt (breakpoints) pour suivre l'exécution pas à pas.
+                        </p>
+                        <p><strong>Mes difficultés :</strong> Suivre l'évolution de la valeur des variables à
+                          l'intérieur des boucles complexes a demandé beaucoup de concentration.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai appris qu'il faut être extrêmement méthodique
+                          et patient lors du débogage d'un programme informatique.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> J'ajouterais plus de logs ou de commandes
+                          "print" dans le code pour tracer facilement ce qui se passe.</p>
+                        <p><strong>Preuves (PJ) :</strong> Code Python d'origine commenté et version finale corrigée.
+                        </p>
+                        <p><strong>Notes :</strong> Utile pour aborder l'automatisation réseau dans le futur.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1302.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/python%20code%20debugging%20ide?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC13.02: Lire, exécuter, corriger et modifier un programme">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_programmer_2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_programmer_2" aria-expanded="false"
+                    aria-controls="collapse_accordion_programmer_2">
+                    <i class="bi bi-code-slash me-2 text-primary"></i> AC13.03: Traduire un algorithme
+                  </button>
+                </h3>
+                <div id="collapse_accordion_programmer_2" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_programmer_2" data-bs-parent="#accordion_programmer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai développé un petit programme en Python pour calculer
+                          automatiquement des masques de sous-réseau.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> L'objectif était d'automatiser un calcul réseau
+                          récurrent en appliquant une logique algorithmique stricte.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Je suis parti d'un
+                          algorigramme dessiné sur papier, que j'ai ensuite traduit en code Python via un environnement
+                          de développement.</p>
+                        <p><strong>Mes difficultés :</strong> Respecter l'indentation stricte exigée par Python pour
+                          délimiter les blocs d'instructions m'a posé quelques difficultés.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai compris comment utiliser les boucles et les
+                          conditions en Python pour traiter les différentes parties d'une adresse IP.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> J'utiliserais davantage les blocs "try/except"
+                          pour éviter que le programme ne plante en cas de mauvaise saisie de l'utilisateur.</p>
+                        <p><strong>Preuves (PJ) :</strong> Fichier source (.py) du programme et capture d'écran d'un
+                          calcul réussi.</p>
+                        <p><strong>Notes :</strong> Le développement Python est très utilisé pour l'automatisation
+                          réseau.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1303.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/ip%20address%20subnet%20mask%20algorithm?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3" alt="Illustration AC13.03: Traduire un algorithme">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_programmer_3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_programmer_3" aria-expanded="false"
+                    aria-controls="collapse_accordion_programmer_3">
+                    <i class="bi bi-code-slash me-2 text-primary"></i> AC13.04: Connaître l'architecture d'un site Web
+                  </button>
+                </h3>
+                <div id="collapse_accordion_programmer_3" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_programmer_3" data-bs-parent="#accordion_programmer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai créé une page web statique que j'ai hébergée sur un
+                          serveur web local (portfolio).</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Il fallait comprendre concrètement le fonctionnement
+                          du modèle client-serveur web (requêtes HTTP).</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai codé en HTML et
+                          CSS sur un éditeur de texte, et j'ai installé le serveur Apache sous Linux pour héberger les
+                          fichiers.</p>
+                        <p><strong>Mes difficultés :</strong> Centrer les éléments avec CSS et rendre la page adaptable
+                          à la taille de l'écran (responsive) a été fastidieux.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai bien assimilé le rôle du "front-end" pour
+                          l'affichage visuel et du serveur pour la distribution des fichiers.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> J'utiliserais un framework CSS simple comme
+                          Bootstrap pour gagner du temps sur la mise en page visuelle.</p>
+                        <p><strong>Preuves (PJ) :</strong> Code source HTML/CSS et capture d'écran du site hébergé.</p>
+                        <p><strong>Notes :</strong> Base solide pour gérer les interfaces d'administration web des
+                          routeurs.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1304.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/html%20css%20web%20design%20code?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC13.04: Connaître l'architecture d'un site Web">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_programmer_4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_programmer_4" aria-expanded="false"
+                    aria-controls="collapse_accordion_programmer_4">
+                    <i class="bi bi-code-slash me-2 text-primary"></i> AC13.05: Choisir les mécanismes de gestion de
+                    données
+                  </button>
+                </h3>
+                <div id="collapse_accordion_programmer_4" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_programmer_4" data-bs-parent="#accordion_programmer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai conçu une petite base de données relationnelle pour
+                          recenser le matériel des labos de chimie.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> L'information devait être structurée correctement
+                          pour pouvoir effectuer des recherches rapides et précises.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai commencé par
+                          dessiner un Modèle Conceptuel de Données (MCD) avant de créer les tables en langage SQL.</p>
+                        <p><strong>Mes difficultés :</strong> Comprendre les règles de normalisation pour éviter d'avoir
+                          des informations en double a demandé de la réflexion.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai appris le principe des clés primaires, des clés
+                          étrangères et la puissance des jointures dans les requêtes SQL.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je définirais beaucoup mieux mes besoins au
+                          brouillon avant de lancer la création des tables informatiques.</p>
+                        <p><strong>Preuves (PJ) :</strong> Schéma relationnel de la base et exemples de requêtes SQL de
+                          recherche.</p>
+                        <p><strong>Notes :</strong> Les bases de données sont essentielles dans tout système
+                          d'information.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1305.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/sql%20database%20schema%20tables?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC13.05: Choisir les mécanismes de gestion de données">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading_accordion_programmer_5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse_accordion_programmer_5" aria-expanded="false"
+                    aria-controls="collapse_accordion_programmer_5">
+                    <i class="bi bi-code-slash me-2 text-primary"></i> AC13.06: S'intégrer dans un environnement
+                    collaboratif
+                  </button>
+                </h3>
+                <div id="collapse_accordion_programmer_5" class="accordion-collapse collapse"
+                  aria-labelledby="heading_accordion_programmer_5" data-bs-parent="#accordion_programmer">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p><strong>Ce que j'ai fait :</strong> J'ai utilisé GitLab et GitHub lors d'un projet
+                          informatique réalisé en groupe.</p>
+                        <p><strong>Pourquoi je l'ai fait :</strong> Nous avions besoin de gérer les versions de notre
+                          code source sans écraser le travail de nos camarades.</p>
+                        <p><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Nous avons créé un
+                          dépôt distant, utilisé les commandes de "commit", de création de branches et de fusion
+                          (merge).</p>
+                        <p><strong>Mes difficultés :</strong> Gérer les conflits de fusion, lorsque deux personnes
+                          avaient modifié la même ligne de code en même temps, a été source de stress.</p>
+                        <p><strong>Ce que j'en ai appris :</strong> J'ai compris que la communication au sein de
+                          l'équipe est aussi importante que la maîtrise technique des outils collaboratifs.</p>
+                        <p><strong>Ce que je ferais autrement :</strong> Je ferais des sauvegardes de code (commits)
+                          beaucoup plus fréquentes, petites et précises au lieu de gros blocs.</p>
+                        <p><strong>Preuves (PJ) :</strong> Lien vers notre dépôt GitHub étudiant et historique de nos
+                          commits.</p>
+                        <p><strong>Notes :</strong> C'est une compétence transversale très recherchée par les
+                          entreprises.</p>
+
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <img
+                          src="assets/img/portfolio/ac1306.jpg" onerror="this.onerror=null; this.src='https://image.pollinations.ai/prompt/github%20git%20collaboration%20code?width=600&height=400&nologo=true';"
+                          class="img-fluid rounded mt-3 mb-3"
+                          alt="Illustration AC13.06: S'intégrer dans un environnement collaboratif">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container section-title mt-5" data-aos="fade-up">
+        <h2>Projets Personnels</h2>
+        <p>Initiatives extra-scolaires développées en autonomie.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <a href="https://vlansky.ovh" target="_blank" title="Accéder au site du serveur">
+                <img src="assets/img/portfolio/netcup.jpg" class="card-img-top" alt="Serveur Netcup"
+                  onerror="this.src='https://image.pollinations.ai/prompt/linux%20vps%20server?width=600&height=400&nologo=true'">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Serveur Root & crafty</h4>
+                <p class="card-text">Installation serveur root, Docker, Crafty. Sécurisation Firewall & Nginx.</p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">Administrer</span>
+                  <span class="badge bg-secondary">Sécuriser</span>
+                </div>
+                <a href="https://panel.vlansphere.ovh" title="Voir le site" target="_blank"
+                  class="btn btn-primary btn-sm"><i class="bi bi-link-45deg me-1"></i>Visiter</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <a href="https://github.com/arthurhuyghe1/jarvis.git" target="_blank" title="Voir sur GitHub">
+                <img src="assets/img/portfolio/jarvis.jpg" class="card-img-top" alt="Code Python"
+                  onerror="this.src='https://image.pollinations.ai/prompt/python%20ai%20code?width=600&height=400&nologo=true'">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Projet "Jarvis" & IA Locale</h4>
+                <p class="card-text">Assistant LLM local. Scripting Python (Scapy) pour contrôle caméra IP.</p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">Programmer</span>
+                  <span class="badge bg-secondary">Python</span>
+                </div>
+                <a href="https://github.com/arthurhuyghe1/jarvis.git" title="Voir sur GitHub" target="_blank"
+                  class="btn btn-primary btn-sm"><i class="bi bi-github me-1"></i>GitHub</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
